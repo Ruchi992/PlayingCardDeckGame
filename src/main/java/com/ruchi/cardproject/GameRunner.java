@@ -15,7 +15,7 @@ public class GameRunner {
 
 	public static void main(String[] args) {
 		// init
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		Deck theDeck = new Deck(1, true);
 		
 		// init the player objects
@@ -43,7 +43,7 @@ public class GameRunner {
 			// player's turn
 			if(!meDone) {
 				System.out.println("Hit or Stay (Enter H or S):");
-				ans = sc.next();
+				ans = scanner.next();
 				System.out.println();
 				
 				// if the player hits
@@ -80,7 +80,7 @@ public class GameRunner {
 		}
 		// Close scanner
 	
-		sc.close();		
+		scanner.close();		
 		
 		// Print final hand
 		
@@ -99,7 +99,5 @@ public class GameRunner {
 	}
 
 	}
-}
-
-    
+}  
 
